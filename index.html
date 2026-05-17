@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuaca Jakarta</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<div class="sun"></div>
+
+<h1>🌤️ Data Cuaca Jakarta</h1>
+
+<div class="container">
+  
+  <div class="card">
+    <div id="loading" class="loading">Mengambil data...</div>
+
+    <table id="weatherTable">
+      <thead>
+        <tr>
+          <th>Waktu</th>
+          <th>Suhu (°C)</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>📍 Lokasi Jakarta</h3>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
